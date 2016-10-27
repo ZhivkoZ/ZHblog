@@ -31,4 +31,4 @@ More importantly, it represents Microsoft's refreshing stance on open-source dev
 
 VP Terry Myerson teased "more coming soon" in regards to other possibilities signaling a modernized and extremely open Windows 10. "This is brilliant for developers that use a diverse set of tools like me," he said.
 
-### So gl keep developing on Windows! 
+### So gl- keep developing on Windows! 
