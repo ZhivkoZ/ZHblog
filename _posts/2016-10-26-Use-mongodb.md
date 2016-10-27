@@ -10,8 +10,6 @@ tag:
 - blog
 - nosql
 - install
-- shell
-- bash
 ---
 
 
@@ -57,6 +55,8 @@ move C:\mongodb-win32-* C:\mongodb
 MongoDB is self-contained and does not have any other system dependencies. You can run MongoDB from any folder you choose. You may install MongoDB in any folder (e.g. {% highlight text %}
 D:\test\mongodb)
 {% endhighlight %}
+
+
 ## Run MongoDB
 
 **Warning:**
@@ -105,6 +105,7 @@ C:\mongodb\bin\mongod.exe --dbpath "d:\test\mongo db data"
 To begin using MongoDB, see Getting Started with MongoDB. Also consider the Production Notes document before deploying MongoDB in a production environment.
 
 Later, to stop MongoDB, press Control+C in the terminal where the mongod instance is running.
+
 ## Configure a Windows Service for MongoDB
 
 Note:
@@ -142,6 +143,7 @@ To stop the MongoDB service use the following command:
 net stop MongoDB
 To remove the MongoDB service use the following command:
 "C:\Program Files\MongoDB\bin\mongod.exe" --remove
+
 ## Manually Create a Windows Service for MongoDB
 
 The following procedure assumes you have installed MongoDB using the MSI installer, with the default path C:\Program Files\MongoDB 2.6 Standard.
