@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Mongodb-basics"
-date:   2016-10-27
+title: "Mongodb-basics"
+date:2016-10-27
 excerpt: "Install Mongodb and more"
 project: true
 tag:
@@ -20,7 +20,7 @@ tag:
     
 <center>This doc will try to show detailed installation of mongodb and more </center>
     
-## Install MongoDB
+### Install MongoDB
 
 1.**Determine which MongoDB build you need.**
 
@@ -80,7 +80,7 @@ C:\mongodb\bin\mongod.exe --dbpath "d:\test\mongo db data"
 {% endhighlight %}
 2.**Start MongoDB.**
 
-To start MongoDB, run mongod.exe. For example, from the Command Prompt:
+To start MongoDB, run mongod .exe. For example, from the Command Prompt:
 {% highlight text %} 
 C:\Program Files\MongoDB\bin\mongod.exe
 {% endhighlight %}
