@@ -146,7 +146,7 @@ To remove the MongoDB service use the following command:
 
 The following procedure assumes you have installed MongoDB using the MSI installer, with the default path C:\Program Files\MongoDB 2.6 Standard.
 
-If you have installed in an alternative directory, you will need to adjust the paths as appropriate.
+**If you have installed in an alternative directory, you will need to adjust the paths as appropriate.**
 
 **Open an Administrator command prompt.**
 
