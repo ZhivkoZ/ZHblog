@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-04-05T02:17:01+03:00</updated><id>http://localhost:4000/</id><title>ZHblog</title><subtitle>A blog</subtitle><entry><title>Git Commands</title><link href="http://localhost:4000/git-commands/" rel="alternate" type="text/html" title="Git Commands" /><published>2016-04-02T00:00:00+03:00</published><updated>2016-04-02T00:00:00+03:00</updated><id>http://localhost:4000/git-commands</id><content type="html" xml:base="http://localhost:4000/git-commands/">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    &lt;h3&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Contents&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#what&quot; id=&quot;markdown-toc-what&quot;&gt;What?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#installation&quot; id=&quot;markdown-toc-installation&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#git-basic-configuration&quot; id=&quot;markdown-toc-git-basic-configuration&quot;&gt;Git basic configuration&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#git-rename-delete-gitignore&quot; id=&quot;markdown-toc-git-rename-delete-gitignore&quot;&gt;Git rename, delete, .gitignore&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#git-branches&quot; id=&quot;markdown-toc-git-branches&quot;&gt;Git branches&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-idea-of-rebasing&quot; id=&quot;markdown-toc-the-idea-of-rebasing&quot;&gt;The idea of Rebasing.&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#about-github-and-git&quot; id=&quot;markdown-toc-about-github-and-git&quot;&gt;About GitHub and Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/Logo.png&quot; alt=&quot;Logo&quot; class=&quot;selfie&quot; /&gt;&lt;/p&gt;
+
+&lt;center&gt;This doc will try to show variaty of commands on the git service, and try explaining them. &lt;/center&gt;
+
+&lt;h3 id=&quot;what&quot;&gt;What?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;How Git works and using it effectively to store the history of the changes you make&lt;/li&gt;
+  &lt;li&gt;How to use Github to collaborate effectively with a team if it is a company or a open source project&lt;/li&gt;
+  &lt;li&gt;Push, pull, fork and many other docs coming up soon! Now I’m just testing the blog&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;If you want to see how to install git click the button below.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-Installing-Git&quot; class=&quot;btn&quot;&gt;Install Git&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;git-basic-configuration&quot;&gt;Git basic configuration&lt;/h2&gt;
+
+&lt;p&gt;This is focused on global configuration. There is also local configuration.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;####Git, configure your system correctly
+git config --global user.name &quot;Zukenberg Tyson&quot;     // config for your name
+git config --global user.email                      // put your desired email in there
+git config --global color.ui true // colors !important // helps with more recognizble colors in the console. for warnings and stuff.
+1.4.git config --global core.autocrlf true // true for windows // `input` for macs and linux // and what it does is makes show clear rows in the console.
+5.//custom git things// `git config --global alias.s &quot;status -s&quot;` // ===git s=== &amp;lt;-- saves some custom commands like checking the status with only `git s` command 
+1.5.1. git config --global alias.lg &quot;log --oneline --all --graph --decorate&quot;  &amp;lt;--custom check current branch and thingZ,//
+6.cat ~/.gitconfig              // soon on Windows 10! also &quot;vi&quot; working // shows how your git is cofigured 
+/-------------//-----####333--------------#
+2.1. git status
+2.2. git init web1 &amp;lt;-- new repository
+cd web1 
+git status &amp;lt;- branch showing
+2.5.touch index.html index.css bab.html&amp;lt;== ?no Windows command .. //mkdir?-not the same// I&#39;ll soon update this file
+3.git add . &amp;lt;-- adds all into staging area 
+4.git commit -m &quot;Added home page&quot;
+6.git log &amp;lt;-- looks at history
+git log --oneline &amp;lt;-- look easy at the commits on ONE line with only some info shown	
+git log --oneline --decorate ,което е равно на git lg from above  1.5.1
+/!/--------@##############################-----\\\\\\|\\\////##########==--//--
+git push -u origin master
+////////////----------------------------/////////!/
+========================================================================&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;git-rename-delete-gitignore&quot;&gt;Git rename, delete, .gitignore&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;####Not so sure about these commands soon updating so skip if u want
+mkdir web2
+cd web2 
+touch index.htm main.css
+ls
+git init  &amp;lt;-- making the directory a git reposidory // git status &amp;lt;-to check
+3.1.0. rm index.html
+1.rm main.css           // removes main.css from staging area
+2.git mv index.html home.htm &amp;lt;-  // renames index.html to home.html 
+git commit -m &quot;Renamed home page to follow corporate guidelines&quot;
+3.mv index.html home.htm  git add -A &amp;lt;-- not so sure !careful
+4.git rm contact.html // deletes the file
+git commit -m &quot;Deleted contact us page&quot; git add -A &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;git-branches&quot;&gt;Git branches&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;////////////////////////////////////////===================#######3//////////////////////
+//---Branches__------------------------------------------------
+
+1.0. git branch &amp;lt;-- Shows all exisiting branches  // *master 
+2.0. git branch search &amp;lt;-- Creates a branch named &quot;search&quot; // *master search
+3.0. git checkout search &amp;lt;-- Switches branch to the &quot;search&quot; branch // master *search 
+-----------# Now you can commit to the search branch  --!/  
+git checkout master 
+4.0. git merge search &amp;lt;-- Takes the work that we done on the search branch and brings it to master branch
+5.0. git branch -d search &amp;lt;-- Lower CASE D Deletes the branch &quot;search&quot; 
+6.0. git checkout -b categories &amp;lt;-- Creates a new branch named &quot;categories&quot; and check it out // *categories master // almost all proffessionals would use this
+git commit -m &quot;Added categories page&quot;
+7.0. git checkout -b products 	//git branches merge example / Fast-forward
+	touch products.html &amp;lt;- creates a file called products.html
+	git add . &amp;lt;- adds it to the staging area
+	git commit -m &quot;Added products page&quot; &amp;lt;- commits it // type-&amp;gt; history &amp;lt;- to see what have u done
+	git checkout master //switches to *master branch
+	git merge products  // by default is gonna do a Fast-forward merge
+	git lg // git log look and it shows that is added a commit to the master branch from the products change as that it was a part from the master 
+	git branch -d products // to delete products branch
+
+The reason we were able to do a Fast-forward merge, was because there was no difference in history. Where u dont have many branches before that or something. 
+/////////////////////////////---------//
+No fast forward merge, but a recursive merge / merges
+so now master has a commit that categories does not have,
+ $git branch  
+ categories
+ *master
+ $git merge categories / opens a file where you can explain your commit or on windows just adds it automaticaly, you can do it with default message// and the commit is done by recursive merge where you commited it from master to categories
+//.------------.----------------------/----------------// So this was basic commands and tactics just to understand what is happening :D//-
+$git branch -d categories //delete
+$git checkout -b my_account //created and switched to my_account 
+$touch account.html
+$git add .
+$git commit -m &quot;Added account page&quot; 
+$git checkout master
+$git merge --no-ff my_account // where --no-ff means no fast forward and the reason behind this is if we even delete the my_account branch it will still be showned it the log and the history from where that commitment was comming from, which is usefull peace of extra information to have
+/////------/////////////////////////////
+####What happens when good merges gone bad 
+1.If you make totally different changes to a file on different branches you wont be able to merge them 
+	- git status // is your friend and will show you what you need to do 
+	- All you need to resove a merge conflict in Git is a text editor
+		-delete some conflicts and stuff to show what exactly you want to commit to git. and then just git add .&amp;lt;- or add only the file 
+
+$git checkout checkout_page
+$touch git checkout.html //creates the file
+$git add . 
+$git commit - m &quot;Added checkout page&quot;
+vi home.html // vi or other editor  and link to checkoutpage
+$git commit -am &quot;Added link to checkout page&quot;
+$git checkout master
+$cat home.html 
+$git checkout -b add_home_page_links  //:D Hope someone understands what is happening these are just examples to try to show the Diff
+$vi home.htm
+$git commit -m &quot;Added new links to the home page&quot;
+$git branch master // switches to master branch
+$git merge --no-ff add add_home_page_links //accept the default commit message 
+$git branch -d add_home_page_links // deletes  the add_home_age_links branch
+And its all commited to the *master branch and deleted the other branch 
+
+#######Git Diff allows you to see the differences between almost anything 
+1.If you want to learn almost everything about a Git command you should start with &quot;$git help&quot;, so:
+$git help diff
+///////#########GO:
+$vi home.html // and change something in the file 
+$git s
+	home.htm
+$git diff  &amp;lt;---------------will show you what exactly were the changes to that file 
+2.If you want to see the STAGING Changes for a file 
+$git diff --staged 
+3.And if you want to see the difference between your working directory and the last commit you made. 
+$git diff HEAD 
+-So it will show you Staged and Unstaged changes  
+
+###Idea of git Rebasing. 
+This is totally different from a git rebasing -i, and as the two things may be similar in a way they are two totally different things and should be considered that way. 
+- Should I rebase or merge?
+- Merge.. The question is should you rebase before you merge.
+
+
+################3######################################----####&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;the-idea-of-rebasing&quot;&gt;The idea of Rebasing.&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Example:&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;$git checkout -b feature1&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$touch feature1.html&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$git add .&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$git commit -m &quot;Added feature1&quot;&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$git checkout master&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$git checkout -b feature2&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$touch feature2.html .. add .. commit -m &quot;Add feature2&quot;&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$git checkout master&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$git merge --no-ff feature1 //making a recursive merge&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$git branch -d feature1 //delete feature1&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$git lg //log to look out where we are now  and if you have 20 developers it&#39;s kind of hard to look at&lt;/span&gt; 
+&lt;span class=&quot;s&quot;&gt;$git checkout feature2&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$git rebase master   // rebases master HEAD to another place :D ..&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;Where you can work on feature2 on your own and merge it after you are done. And this allows you to build all your integration testing there and so if it breaks there it wont break the main production branch.&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;After you test it you can merge it to your master branch.&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$git checkout master&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$git merge --no-ff feature2&lt;/span&gt; 
+&lt;span class=&quot;s&quot;&gt;$git lg // and now we can tell the story&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;about-github-and-git&quot;&gt;About GitHub and Git&lt;/h2&gt;
+
+&lt;p&gt;GitHub is a website where you can upload a copy of your Git repository. It is a Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. Unlike Git, which is strictly a command-line tool, GitHub provides a web-based graphical interface and desktop as well as mobile integration. It also provides access control and several collaboration features such as wikis, task management, bug tracking and other features that can be helpful for projects. It allows you to collaborate with other people on a project. It does that by providing a centralized location to share the repository, a web-based interface to view it, and features like forking, pull requests distributed revision control, issues, and wikis.&lt;/p&gt;</content><category term="git" /><category term="github" /><category term="blog" /><category term="about" /><category term="commands" /><category term="shell" /><category term="bash" /><summary>What is git and github?</summary></entry><entry><title>Microsoft is adding the Linux command line to Windows 10</title><link href="http://localhost:4000/Microsoft-adding-Linux-to-Windows/" rel="alternate" type="text/html" title="Microsoft is adding the Linux command line to Windows 10" /><published>2016-03-30T00:00:00+03:00</published><updated>2016-03-30T00:00:00+03:00</updated><id>http://localhost:4000/Microsoft-adding-Linux-to-Windows</id><content type="html" xml:base="http://localhost:4000/Microsoft-adding-Linux-to-Windows/">&lt;p&gt;Bash will arrive as part of the Windows 10 Anniversary Update this summer, but it’ll be available to Windows Insiders before that. And looking ahead, Microsoft says it may bring other shells to Windows over time, too.&lt;/p&gt;
+
+&lt;h3 id=&quot;this-is-a-genuine-ubuntu-image-on-top-of-windows-with-all-the-linux-tools-that-are-used&quot;&gt;“This is a genuine Ubuntu image on top of Windows with all the Linux tools that are used.”&lt;/h3&gt;
+
+&lt;h4 id=&quot;microsoft-also-posted-a-very-in-depth-video-covering-bash-on-windows&quot;&gt;Microsoft also posted a very in-depth video covering Bash on Windows.&lt;/h4&gt;
+
+&lt;figure&gt;
+	&lt;a href=&quot;https://cdn0.vox-cdn.com/thumbor/qM_vZAvDdOFWnBQF-q3ejPMtftI=/800x0/filters:no_upscale()/cdn0.vox-cdn.com/uploads/chorus_asset/file/6264457/microsoft-build-2016-event-verge_205.0.0.jpg&quot;&gt;&lt;img src=&quot;https://cdn0.vox-cdn.com/thumbor/qM_vZAvDdOFWnBQF-q3ejPMtftI=/800x0/filters:no_upscale()/cdn0.vox-cdn.com/uploads/chorus_asset/file/6264457/microsoft-build-2016-event-verge_205.0.0.jpg&quot; /&gt;&lt;/a&gt;
+	&lt;figcaption&gt;&lt;a href=&quot;https://cdn0.vox-cdn.com/thumbor/qM_vZAvDdOFWnBQF-q3ejPMtftI=/800x0/filters:no_upscale()/cdn0.vox-cdn.com/uploads/chorus_asset/file/6264457/microsoft-build-2016-event-verge_205.0.0.jpg&quot; title=&quot;Bash coming to Windows is huge news for developers, developers, developers&quot;&gt;Bash coming to Windows is huge news for developers, developers, developers&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Microsoft is reaching out to Linux developers in a way that the company never has before. “The Bash shell is coming to Windows. Yes, the real Bash is coming to Windows,” said Microsoft’s Kevin Gallo on stage at today’s Build 2016 keynote. The announcement received an uproarious applause from the crowd. The new functionality will be enabled as part of this summer’s Anniversary Update to Windows 10.&lt;/p&gt;
+
+&lt;p&gt;“This is not a VM. This is not cross-compiled tools. This is native,” he said. “We’ve partnered with Canonical to offer this great experience, which you’ll be able to download right from the Windows Store.” Third-party tools have enabled this sort of thing for years, but a direct partnership between Microsoft and Canonical should offer even more flexibility and convenience for developers who prefer using these binaries and tools.&lt;/p&gt;
+
+&lt;p&gt;More importantly, it represents Microsoft’s refreshing stance on open-source development. This &lt;a href=&quot;http://www.hanselman.com/blog/DevelopersCanRunBashShellAndUsermodeUbuntuLinuxBinariesOnWindows10.aspx&quot;&gt;blog post by Microsoft’s Scott Hanselman&lt;/a&gt;  offers a deeper explanation of the move.&lt;/p&gt;
+
+&lt;p&gt;VP Terry Myerson teased “more coming soon” in regards to other possibilities signaling a modernized and extremely open Windows 10. “This is brilliant for developers that use a diverse set of tools like me,” he said.&lt;/p&gt;
+
+&lt;h3 id=&quot;as-a-windows-developer-i-can-say---keep-developing-on-windows-10&quot;&gt;As a Windows developer i can say - keep developing on Windows 10!&lt;/h3&gt;</content><category term="microsoft" /><category term="adding" /><category term="Linux" /><category term="Windows" /><summary>Examples and code for displaying images in posts.</summary></entry></feed>
