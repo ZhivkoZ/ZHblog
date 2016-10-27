@@ -12,7 +12,7 @@ tag:
 - install
 ---
 
-
+{% include toc.html %}
     
 ![Logo]({{ site.url }}/{{ site.picture }}){: .selfie}
     
