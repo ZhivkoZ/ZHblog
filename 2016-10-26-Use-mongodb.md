@@ -74,7 +74,7 @@ You can specify an alternate path for data files using the --dbpath option to mo
 {% highlight text %}
 C:\mongodb\bin\mongod.exe --dbpath d:\test\mongodb\data
 {% endhighlight %}
-If your path includes spaces, enclose the entire path in double quotes, for example:
+Dont use  spaces, enclose the entire path in double quotes, for example:
 {% highlight text %}
 C:\mongodb\bin\mongod.exe --dbpath "d:\test\mongo db data"
 {% endhighlight %}
@@ -90,16 +90,16 @@ Depending on the security level of your system, Windows may pop up a Security Al
 
 To connect to MongoDB through the mongo.exe shell, open another Command Prompt. When connecting, specify the data directory if necessary. This step provides several example connection commands.
 
-If your MongoDB installation uses the default data directory, connect without specifying the data directory:
+ MongoDB If your installation uses the default data directory, connect without specifying the data directory:
 
 {% highlight text %}C:\mongodb\bin\mongo.exe
-If you installation uses a different data directory, specify the directory when connecting, as in this example:
+you if installation uses a different data directory, specify the directory when connecting, as in this example:
 
 C:\mongodb\bin\mongod.exe --dbpath d:\test\mongodb\data{% 
-If your path includes spaces, enclose the entire path in double quotes. For example:
+Your path if includes spaces, enclose the entire path in double quotes. For example:
 
 C:\mongodb\bin\mongod.exe --dbpath "d:\test\mongo db data"
-If you want to develop applications using .NET, see the documentation of C# and MongoDB for more information. {% endhighlight %}
+ you  want to develop applications using .NET, see the documentation of C# and MongoDB for more information. {% endhighlight %}
 4.**Begin using MongoDB.**
 
 To begin using MongoDB, see Getting Started with MongoDB. Also consider the Production Notes document before deploying MongoDB in a production environment.
@@ -132,9 +132,9 @@ Modify the path to the mongod.cfg file as needed.
 
 To use an alternate dbpath, specify the path in the configuration file (e.g. C:\Program Files\MongoDB\mongod.cfg) or on the command line with the --dbpath option.
 
-If the dbpath directory does not exist, mongod.exe will not start. The default value for dbpath is \data\db.
+ the dbpath directory does not exist, mongod.exe will not start. The default value for dbpath is \data\db.
 
-If needed, you can install services for multiple instances of mongod.exe or mongos.exe. Install each service with a unique  --serviceName and --serviceDisplayName. Use multiple instances only when sufficient system resources exist and your system design requires it.
+ needed, you can install services for multiple instances of mongod.exe or mongos.exe. Install each service with a unique  --serviceName and --serviceDisplayName. Use multiple instances only when sufficient system resources exist and your system design requires it.
 3**Stop or remove the MongoDB service as needed.**
 
 To stop the MongoDB service use the following command:
