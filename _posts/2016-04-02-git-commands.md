@@ -14,7 +14,7 @@ tag:
 - bash
 ---
 
-{% include toc.html %}
+{ include toc.html }
     
 ![Logo]({{ site.url }}/{{ site.picture }}){: .selfie}
     
