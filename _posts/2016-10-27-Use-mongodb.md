@@ -5,11 +5,11 @@ date:   2016-10-27
 excerpt: "Install Mongodb and more"
 project: true
 tag:
-- git
-- github
+- mongo
+- database
 - blog
-- about
-- commands
+- nosql
+- install
 - shell
 - bash
 ---
@@ -18,7 +18,7 @@ tag:
     
 ![Logo]({{ site.url }}/{{ site.picture }}){: .selfie}
     
-<center>This doc will try to show variaty of commands on the git service, and try explaining them. </center>
+<center>This doc will try to show detailed installation of mongodb and more </center>
     
 ### Install MongoDB
 
