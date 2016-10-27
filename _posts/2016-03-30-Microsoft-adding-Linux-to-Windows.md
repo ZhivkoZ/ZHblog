@@ -1,9 +1,14 @@
 ---
 layout: post
-title: "Microsoft is adding the Linux command line to Windows 10"
-date: 2016-03-30
-excerpt: "Examples and code for displaying images in posts."
-tags: [microsoft, adding, Linux, Windows]
+title: Microsoft is adding the Linux command line to Windows 10
+date: {}
+excerpt: Examples and code for displaying images in posts.
+tags:
+  - microsoft
+  - adding
+  - Linux
+  - Windows
+published: true
 ---
 
 Bash will arrive as part of the Windows 10 Anniversary Update this summer, but it’ll be available to Windows Insiders before that. And looking ahead, Microsoft says it may bring other shells to Windows over time, too.
@@ -30,5 +35,4 @@ More importantly, it represents Microsoft's refreshing stance on open-source dev
 
 VP Terry Myerson teased "more coming soon" in regards to other possibilities signaling a modernized and extremely open Windows 10. "This is brilliant for developers that use a diverse set of tools like me," he said.
 
-### As a Windows developer i can say - keep developing on Windows 10! 
-
+### So gl developing on Windows!
