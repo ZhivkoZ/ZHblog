@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Microsoft is adding the Linux command line to Windows 10
+title: 2016-03-03-Microsoft is adding the Linux command line to Windows 10
 date: {}
 excerpt: Examples and code for displaying images in posts.
 tags:
