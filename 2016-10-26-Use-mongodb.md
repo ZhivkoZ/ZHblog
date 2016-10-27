@@ -81,9 +81,8 @@ C:\mongodb\bin\mongod.exe --dbpath "d:\test\mongo db data"
 2.**Start MongoDB.**
 
 To start MongoDB, run mongod .exe. For example, from the Command Prompt:
-{% highlight text %} 
 C:\Program Files\MongoDB\bin\mongod.exe
-{% endhighlight %}
+
 This starts the main MongoDB database process. The waiting for connections message in the console output indicates that the mongod.exe process is running successfully.
 
 Depending on the security level of your system, Windows may pop up a Security Alert dialog box about blocking “some features” of C:\Program Files\MongoDB\bin\mongod.exe from communicating on networks. All users should select Private Networks, such as my home or work network and click Allow access. For additional information on security and MongoDB, please see the Security Documentation.
