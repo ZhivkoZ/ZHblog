@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install Mongodb and more"
+title: "Install Mongodb And More"
 date: 2016-10-26
 excerpt: "Install Mongodb and more"
 project: true
