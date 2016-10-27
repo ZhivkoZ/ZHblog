@@ -181,7 +181,7 @@ Files\MongoDB 2.6 Standard\mongod.cfg\"" DisplayName= "MongoDB 2.6 Standard" sta
 
 sc.exe requires a space between “=” and the configuration values (eg “binPath=”), and a “” to escape double quotes.
 
-## If successfully created, the following log message will display:
+## successfully created, the following log message will display:
 **[SC] CreateService SUCCESS
 Start the MongoDB service.
 net start MongoDB
