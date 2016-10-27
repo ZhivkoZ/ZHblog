@@ -2,7 +2,7 @@
 title:          ZHblog
 bio:            "Zhivko Zhelev's blog."
 description:    "A blog"
-picture:        'assets/img/Logo.png'
+picture:        'assets/img/Logo.svg'
 locale:         en_US
 url:            /ZHblog
 
