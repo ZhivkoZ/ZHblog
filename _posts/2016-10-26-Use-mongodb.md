@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Mongodb-basics"
-date:2016-10-27
+title: "Install Mongodb and more"
+date: 2016-10-26
 excerpt: "Install Mongodb and more"
 project: true
 tag:
