@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Git Commands"
-date:   2016-04-02
-excerpt: "What is git and github?"
+title:  "Mongodb-basics"
+date:   2016-10-27
+excerpt: "Install Mongodb and more"
 project: true
 tag:
 - git
