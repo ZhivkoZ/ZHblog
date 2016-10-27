@@ -20,7 +20,7 @@ tag:
     
 <center>This doc will try to show detailed installation of mongodb and more </center>
     
-### Install MongoDB
+## Install MongoDB
 
 1.**Determine which MongoDB build you need.**
 
@@ -52,9 +52,12 @@ Right-click Command Prompt and select Run as Administrator from the popup menu.
 Issue the following commands:
 {% highlight text %}
 cd \
-move C:\mongodb-win32-* C:\mongodb {% endhighlight %}
-MongoDB is self-contained and does not have any other system dependencies. You can run MongoDB from any folder you choose. You may install MongoDB in any folder (e.g. {% highlight text %}D:\test\mongodb){% endhighlight %}
-### Run MongoDB
+move C:\mongodb-win32-* C:\mongodb
+{% endhighlight %}
+MongoDB is self-contained and does not have any other system dependencies. You can run MongoDB from any folder you choose. You may install MongoDB in any folder (e.g. {% highlight text %}
+D:\test\mongodb)
+{% endhighlight %}
+## Run MongoDB
 
 **Warning:**
 
@@ -64,17 +67,23 @@ Do not make mongod.exe visible on public networks without running in “Secure M
 
 MongoDB requires a data directory to store all data. MongoDB’s default data directory path is \data\db. Create this folder using the following commands from a Command Prompt:
 {% highlight text %}
-md \data\db{% endhighlight %}
+md \data\db 
+{% endhighlight %}
 You can specify an alternate path for data files using the --dbpath option to mongod.exe, for example:
 
-{% highlight text %}C:\mongodb\bin\mongod.exe --dbpath d:\test\mongodb\data{% endhighlight %}
+{% highlight text %}
+C:\mongodb\bin\mongod.exe --dbpath d:\test\mongodb\data
+{% endhighlight %}
 If your path includes spaces, enclose the entire path in double quotes, for example:
-{% highlight text %}C:\mongodb\bin\mongod.exe --dbpath "d:\test\mongo db data"{% endhighlight %}
+{% highlight text %}
+C:\mongodb\bin\mongod.exe --dbpath "d:\test\mongo db data"
+{% endhighlight %}
 2.**Start MongoDB.**
 
 To start MongoDB, run mongod.exe. For example, from the Command Prompt:
-
-{% highlight text %}C:\Program Files\MongoDB\bin\mongod.exe{% endhighlight %}
+{% highlight text %} 
+C:\Program Files\MongoDB\bin\mongod.exe
+{% endhighlight %}
 This starts the main MongoDB database process. The waiting for connections message in the console output indicates that the mongod.exe process is running successfully.
 
 Depending on the security level of your system, Windows may pop up a Security Alert dialog box about blocking “some features” of C:\Program Files\MongoDB\bin\mongod.exe from communicating on networks. All users should select Private Networks, such as my home or work network and click Allow access. For additional information on security and MongoDB, please see the Security Documentation.
@@ -97,7 +106,7 @@ If you want to develop applications using .NET, see the documentation of C# and 
 To begin using MongoDB, see Getting Started with MongoDB. Also consider the Production Notes document before deploying MongoDB in a production environment.
 
 Later, to stop MongoDB, press Control+C in the terminal where the mongod instance is running.
-### Configure a Windows Service for MongoDB
+## Configure a Windows Service for MongoDB
 
 Note:
 
@@ -111,7 +120,8 @@ Create a specific directory for MongoDB log files:
 {% highlight text %}
 md "C:\Program Files\MongoDB\log"
 In the Command Prompt, create a configuration file for the logpath option for MongoDB:
-echo logpath=C:\Program Files\MongoDB\log\mongo.log > "C:\Program Files\MongoDB\mongod.cfg"{% endhighlight %}
+echo logpath=C:\Program Files\MongoDB\log\mongo.log > "C:\Program Files\MongoDB\mongod.cfg"
+{% endhighlight %}
 2**Run the MongoDB service.**
 
 Run all of the following commands in Command Prompt with “Administrative Privileges:”
@@ -133,7 +143,7 @@ To stop the MongoDB service use the following command:
 net stop MongoDB
 To remove the MongoDB service use the following command:
 "C:\Program Files\MongoDB\bin\mongod.exe" --remove
-### Manually Create a Windows Service for MongoDB
+## Manually Create a Windows Service for MongoDB
 
 The following procedure assumes you have installed MongoDB using the MSI installer, with the default path C:\Program Files\MongoDB 2.6 Standard.
 
@@ -171,7 +181,7 @@ Files\MongoDB 2.6 Standard\mongod.cfg\"" DisplayName= "MongoDB 2.6 Standard" sta
 
 sc.exe requires a space between “=” and the configuration values (eg “binPath=”), and a “” to escape double quotes.
 
-### If successfully created, the following log message will display:
+## If successfully created, the following log message will display:
 **[SC] CreateService SUCCESS
 Start the MongoDB service.
 net start MongoDB
