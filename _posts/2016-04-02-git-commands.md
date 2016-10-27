@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title:  "Git Commands"
 date:   2016-04-02
 excerpt: "What is git and github?"

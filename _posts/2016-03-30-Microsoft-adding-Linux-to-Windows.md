@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "Microsoft is adding the Linux command line to Windows 10"
 date:  2016-03-30
 excerpt: " "
