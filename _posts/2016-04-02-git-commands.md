@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title:  "Git Commands"
 date:   2016-04-02
 excerpt: "What is git and github?"
@@ -14,7 +14,7 @@ tag:
 - bash
 ---
 
-{ include toc.html }
+{% include toc.html %}
     
 ![Logo]({{ site.url }}/{{ site.picture }}){: .selfie}
     

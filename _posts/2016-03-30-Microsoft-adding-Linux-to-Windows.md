@@ -11,7 +11,7 @@ tags:
 published: true
 ---
   
-  { include toc.html }
+  {% include toc.html %}
     
 Bash will arrive as part of the Windows 10 Anniversary Update this summer, but it’ll be available to Windows Insiders before that. And looking ahead, Microsoft says it may bring other shells to Windows over time, too.
 
