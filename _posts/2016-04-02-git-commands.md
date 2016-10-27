@@ -196,3 +196,7 @@ $git lg // and now we can tell the story
 ## About GitHub and Git
      
 GitHub is a website where you can upload a copy of your Git repository. It is a Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. Unlike Git, which is strictly a command-line tool, GitHub provides a web-based graphical interface and desktop as well as mobile integration. It also provides access control and several collaboration features such as wikis, task management, bug tracking and other features that can be helpful for projects. It allows you to collaborate with other people on a project. It does that by providing a centralized location to share the repository, a web-based interface to view it, and features like forking, pull requests distributed revision control, issues, and wikis. 
+
+## Github for noobs youtube playlist
+
+[Youtube](https://www.youtube.com/watch?v=1h9_cB9mPT8&list=PLqGj3iMvMa4LFz8DZ0t-89twnelpT4Ilw){: .btn}
