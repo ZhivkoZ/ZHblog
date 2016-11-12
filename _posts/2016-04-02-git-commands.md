@@ -81,41 +81,54 @@ git commit -m "Deleted contact us page" git add -A
 {% endhighlight %} 
 
 {% highlight yaml %}
-In .gitignore to ignore a folder or different kind of files you put "/" in different places
+In .gitignore to ignore a folder or different
+kind of files you put "/" in different places
 
 
 /node_modules  <-- these files will be ignored since "/" its at the start
 examplefolder/ <-- this should ignore folder 
 
 .gitignore patterns
-Patterns inside the .gitignore file are matched from the root directory of the git repository. Patterns are comprised of a wildcard character *, to match any character, and literal characters to match the exact phrase.
+Patterns inside the .gitignore file are matched from the root directory 
+of the git repository. Patterns are comprised of a wildcard character *, 
+to match any character, and literal characters to match the exact phrase.
 
-A typical example of using a .gitignore file would be to exclude all files ending in .log. The below pattern would be added to the .gitignore file
+A typical example of using a .gitignore file would be
+to exclude all files ending in .log. The below
+pattern would be added to the .gitignore file
 
 *.log
-Or, as with something like log4j, your log files may include numbers at the end. This pattern will exclude any file names that contain .log.
+Or, as with something like log4j,
+your log files may include numbers at the end.
+This pattern will exclude any file names
+that contain .log.
 
 *.log*
-Another use is to exclude all files in a specific path, such as the application build directory. This will ignore the Build directory and everything within it.
-
+Another use is to exclude all files in a specific path,
+such as the application build directory. This will ignore
+the Build directory and everything within it.
 
 /Build/*
 Single repository .gitignore
-Add your patterns to the below file to add exclusions to affect only a singe git repository. You must make sure you have changed to the root directory of your repository, or include it in the file path.
-
+Add your patterns to the below file to add exclusions to affect only
+a singe git repository.
+You must make sure you have changed to the root directory of your
+repository, or include it in the file path.
 
 vi /path/to/repository/.git/info/exclude
 Global .gitignore
-You must run a git config command to enable .gitignore to work across all local repositories. You can edit the ~/.gitignore path if required.
-
+You must run a git config command to enable .gitignore 
+to work across all local repositories. 
+You can edit the ~/.gitignore path if required.
 
 git config --global core.excludesfile ~/.gitignore
-Once enabled, edit the ~/.gitignore file and add patterns which will affect the next git add command.
-
+Once enabled, edit the
+~/.gitignore file and add patterns which will affect
+the next git add command.
 
 vi ~/.gitignore
-For example, you may add a global gitignore entry for .bak files. Add the following line to you global gitignore file:
-
+For example, you may add a global gitignore entry for .bak files.
+Add the following line to you global gitignore file:
 
 *.bak
  {% endhighlight %}
