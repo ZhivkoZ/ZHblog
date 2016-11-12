@@ -24,7 +24,7 @@ tag:
 
 * How Git works and using it effectively to store the history of the changes you make
 * How to use Github to collaborate effectively with a team if it is a company or a open source project
-* Push, pull, fork and many other docs coming up soon! Now I'm just testing the blog
+* Push, pull, fork and many other docs coming up soon! 
         
 ## Installation
 **If you want to see how to install git click the button below.**     
