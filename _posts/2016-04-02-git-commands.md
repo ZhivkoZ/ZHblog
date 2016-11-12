@@ -193,6 +193,13 @@ $git merge --no-ff feature2
 $git lg // and now we can tell the story 
 {% endhighlight %}
 
+## Filename too long fix
+{% highlight yaml %}
+Windows does not properly support files and directories longer than 260 characters. 
+Solution: 
+git config --system core.longpaths true
+{% endhighlight %}
+
 ## About GitHub and Git
      
 GitHub is a website where you can upload a copy of your Git repository. It is a Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. Unlike Git, which is strictly a command-line tool, GitHub provides a web-based graphical interface and desktop as well as mobile integration. It also provides access control and several collaboration features such as wikis, task management, bug tracking and other features that can be helpful for projects. It allows you to collaborate with other people on a project. It does that by providing a centralized location to share the repository, a web-based interface to view it, and features like forking, pull requests distributed revision control, issues, and wikis. 
