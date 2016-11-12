@@ -78,7 +78,14 @@ git commit -m "Renamed home page to follow corporate guidelines"
 3.mv index.html home.htm  git add -A <-- not so sure !careful
 4.git rm contact.html // deletes the file
 git commit -m "Deleted contact us page" git add -A 
+{% highlight yaml %}
+In .gitignore to ignore a folder or different kind of files you put "/" in different places
 
+examplefolder/ <-- this folder will be ignored
+/node_modules  <-- these files will be ignored since "/" its at the start
+.DS_Store <-- ignored dknow what is going on
+/*.env <-- ignored dknow what is going on
+ 
 {% endhighlight %} 
 
 ## Git branches
