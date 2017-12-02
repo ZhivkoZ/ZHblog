@@ -21,7 +21,7 @@ tag:
 
   <center>This doc will try to show variaty of commands on the git service, and try explaining them. </center>
 
-  ### What?
+### What?
 
   * How Git works and using it effectively to store the history of the changes you make
   * How to use Github to collaborate effectively with a team if it is a company or a open source project
@@ -32,7 +32,7 @@ tag:
 
   [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){: .btn}
 
-  ## Git basic configuration        
+## Git basic configuration        
 
   This is focused on global configuration. There is also local configuration.
 
@@ -64,7 +64,7 @@ tag:
 
   ---
 
-  ## Git rename, delete, .gitignore
+## Git rename, delete, .gitignore
   {% highlight text %}
   ####Not so sure about these commands soon updating so skip if u want
   mkdir web2
@@ -135,7 +135,7 @@ tag:
    {% endhighlight %}
 
 
-  ## Git branches
+## Git branches
   {% highlight text %}
   ////////////////////////////////////////===================#######3//////////////////////
   //---Branches__------------------------------------------------
@@ -222,7 +222,7 @@ tag:
   {% endhighlight %}
 
 
-  #### The idea of Rebasing.
+#### The idea of Rebasing.
 
   `Example:`
 
@@ -254,7 +254,7 @@ tag:
   git config --system core.longpaths true
   {% endhighlight %}
 
-  ## Clone
+## Clone
   {% highlight text %}
   Clone a project from the console:
   $ git clone https://git.example.com/[yourapp].git && cd [yourapp]
@@ -263,10 +263,10 @@ tag:
   https://git-scm.com/docs/git-clone
 
   {% endhighlight %}
-  ## About GitHub and Git
+## About GitHub and Git
 
   GitHub is a website where you can upload a copy of your Git repository. It is a Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. Unlike Git, which is strictly a command-line tool, GitHub provides a web-based graphical interface and desktop as well as mobile integration. It also provides access control and several collaboration features such as wikis, task management, bug tracking and other features that can be helpful for projects. It allows you to collaborate with other people on a project. It does that by providing a centralized location to share the repository, a web-based interface to view it, and features like forking, pull requests distributed revision control, issues, and wikis.
 
-  ## Github for noobs youtube playlist
+## Github for noobs youtube playlist
 
-  [Youtube](https://www.youtube.com/watch?v=1h9_cB9mPT8&list=PLqGj3iMvMa4LFz8DZ0t-89twnelpT4Ilw){: .btn}
+[Youtube](https://www.youtube.com/watch?v=1h9_cB9mPT8&list=PLqGj3iMvMa4LFz8DZ0t-89twnelpT4Ilw){: .btn}
