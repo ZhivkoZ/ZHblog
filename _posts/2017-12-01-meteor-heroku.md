@@ -18,35 +18,36 @@ tag:
 <center>How to Run a Meteor.js Application on Heroku </center>
 
 ### What?
+* How to Run a Meteor.js Application on Heroku 
+
+## Set Buildpack for Heroku Instance
+{% highlight text %}
+1) Run:
+$ heroku create [yourappname] --stack cedar --region us --buildpack https://github.com/jordansissel/heroku-buildpack-meteor.git
+Use the reliable Meteor Buildpack Horse!:
+{% highlight yaml %}UPDATE: use this buildpack instead
+heroku buildpacks:set https://github.com/AdmitHub/meteor-buildpack-horse.git
+{% endhighlight %}
+UPDATE2: use this build pack to run with iOS and android platforms added
+https://github.com/Alveoli/meteor-buildpack-horse
+{% endhighlight %}
+
+## Clone the Heroku repo and cd into it:
+{% highlight text %}
+2)$ git clone https://git.heroku.com/[yourapp].git && cd [yourapp]
+{% endhighlight %}
 
 * Create a git instance
 * Login to Heroku
 
-  {% highlight text %}
+{% highlight text %}
+  i.e.:
 git init
 git add
 git commit
 
 heroku login
-
-  {% endhighlight %}   
-## Set Buildpack for Heroku Instance
-{% highlight text %}
-1) Run:
-$ heroku create [yourappname] --stack cedar --region us --buildpack https://github.com/jordansissel/heroku-buildpack-meteor.git
-
-use the reliable Meteor Buildpack Horse:
-UPDATE: use this buildpack instead
-	heroku buildpacks:set https://github.com/AdmitHub/meteor-buildpack-horse.git
-
-UPDATE2: use this build pack to run with iOS and android platforms added
-	https://github.com/Alveoli/meteor-buildpack-horse
-
-{% endhighlight %}
-## Clone the Heroku repo and cd into it:
-{% highlight text %}
-2)	$ git clone https://git.heroku.com/[yourapp].git && cd [yourapp]
-{% endhighlight %}
+{% endhighlight %}   
 
 ## Create and Configure a New mLab Instance
 {% highlight text %}
