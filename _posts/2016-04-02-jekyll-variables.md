@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Git Commands"
-date:   2017-04-01
+title:  "How to Run a Meteor.js Application on Heroku"
+date:   2017-12-01
 excerpt: "How to Run a Meteor.js Application on Heroku"
 project: true
 tag:
