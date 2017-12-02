@@ -1,19 +1,19 @@
-  ---
-  layout: post
-  title:  "Git Commands"
-  date:   2016-04-01
-  excerpt: "What is git? What is github git commands"
-  project: true
-  tag:
-  - git
-  - github
-  - blog
-  - about
-  - commands
-  - shell
-  - bash
-  - cheat sheet
-  ---
+---
+layout: post
+title:  "Git Commands"
+date:   2016-04-01
+excerpt: "What is git? What is github git commands"
+project: true
+tag:
+- git
+- github
+- blog
+- about
+- commands
+- shell
+- bash
+- cheat sheet
+---
 
   {% include toc.html %}
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "How to Run a Meteor.js Application on Heroku"
-date:   2017-12-01
-excerpt: "How to Run a Meteor.js Application on Heroku"
+date:  2017-12-01
 project: true
 tag:
 - Heroku
@@ -15,10 +14,10 @@ tag:
 
 ![Logo]({{ site.url }}/{{ site.picture }}){: .selfie}
 
-<center>How to Run a Meteor.js Application on Heroku </center>
+<center>How to Run a Meteor.js Application on Heroku</center>
 
 ### What?
-* How to Run a Meteor.js Application on Heroku 
+* How to Run a Meteor.js Application on Heroku
 
 ## Set Buildpack for Heroku Instance
 {% highlight text %}
@@ -94,5 +93,4 @@ Make sure you set up the MAIL_URL, see http://docs.meteor.com/#/full/email
 Meteor
 Meteor is an open-source, full-stack JavaScript development platform for rapid app development. You can view the full Meteor API   [here](https://docs.meteor.com/index.html){: .btn}.
 
-Heroku
 Heroku is an excellent PaaS provider for hosting your app in the cloud. Scaling your app is easy and there are plenty of add-ons to ready your app for whatever audience you’re targeting.
